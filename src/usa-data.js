@@ -23,8 +23,8 @@ export const USAChartData = {
         label: "USA GDP, in Billions USD",
         type: "line",
         data: USAGDPLevel,
-        backgroundColor: "rgba(71, 183,132,.5)",
-        borderColor: "#47b784",
+        backgroundColor: "rgba(32, 83,171,.5)",
+        borderColor: "#3447b7",
         borderWidth: 3
       }
     ]

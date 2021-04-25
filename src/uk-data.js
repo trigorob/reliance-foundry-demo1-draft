@@ -10,8 +10,8 @@ export const UKChartData = {
         label: "UK GDP, in Billions USD",
         type: "line",
         data: UKGDPLevel,
-        backgroundColor: "rgba(71, 183,132,.5)",
-        borderColor: "#47b784",
+        backgroundColor: "rgba(171, 83,32,.5)",
+        borderColor: "#b71734",
         borderWidth: 3
       }
     ]

@@ -10,8 +10,8 @@ export const USAPredictedData = {
         label: "USA GDP, in Billions USD",
         type: "line",        
         data: USAGDPPredictedLevel,
-        backgroundColor: "rgba(171, 83,32,.5)",
-        borderColor: "#b74784",
+        backgroundColor: "rgba(204, 230, 255,.5)",
+        borderColor: "#3399ff",        
         borderWidth: 3
       }
     ]

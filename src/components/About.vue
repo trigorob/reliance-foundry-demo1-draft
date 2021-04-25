@@ -1,7 +1,7 @@
 <template>
 	<transition name="fade">
 		<div>
-			In this project, we create a Machine Learning example project,<br/>
+			In this project, we create a Machine Learning example,<br/>
 			showcasing how we can model & predict future statistics<br/>
 			given our historical Data.<br/>
 
