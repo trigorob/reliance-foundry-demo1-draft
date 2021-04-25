@@ -1,5 +1,5 @@
 <template>
-  <div id="container" class="center">
+  <div id="container" class="center paddingUp paddingDown">
     <canvas class="chart-standard" id="usa-predictions-gdp"></canvas>
   </div>
 </template>

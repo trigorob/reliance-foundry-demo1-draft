@@ -10,6 +10,14 @@
   margin-right: auto;
 }
 
+.paddingUp {
+  padding-top: 5%;
+}
+
+.paddingDown {
+  padding-bottom: 5%;
+}
+
 
 .chart-standard {
   display: block;
