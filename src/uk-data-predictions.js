@@ -1,15 +1,15 @@
-import {USAGDPPredictedYears, USAGDPPredictedLevel} from './usa-data-json-handler.js'
+import {UKGDPPredictedYears, UKGDPPredictedLevel} from './uk-data-json-handler.js'
 
 
-export const USAPredictedData = {
+export const UKPredictedData = {
   type: "bar",
   data: {
-    labels: USAGDPPredictedYears,
+    labels: UKGDPPredictedYears,
     datasets: [
       {
-        label: "USA GDP, in Billions USD",
+        label: "UK GDP, in Billions USD",
         type: "line",        
-        data: USAGDPPredictedLevel,
+        data: UKGDPPredictedLevel,
         backgroundColor: "rgba(171, 83,32,.5)",
         borderColor: "#b74784",
         borderWidth: 3
@@ -31,9 +31,10 @@ export const USAPredictedData = {
     },
     title: {
         display: true,
-        text: 'USA Predicted GDP',
+        text: 'UK Predicted GDP',
     }
   }
 };
 
-export default USAPredictedData;
+export default UKPredictedData;
+

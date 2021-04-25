@@ -1,29 +1,23 @@
 <template>
   <div id="app">
-
-    <!--<PlanetChart/>  -->
-    <USAChartGDP />  
-    <USAPredictedGDP />
+    <Tabs />
+    <!--<USAChartGDP />  
+    <USAPredictedGDP />-->
   </div>
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
-//import TailwindCSSDemo from './components/TailwindCSSDemo.vue'
-//import PlanetChart from './components/PlanetChart.vue'
-import USAChartGDP from './components/USAChartGDP.vue'
-import USAPredictedGDP from './components/USAPredictedGDP.vue'
-
+//import USAChartGDP from './components/USAChartGDP.vue'
+//import USAPredictedGDP from './components/USAPredictedGDP.vue'
+//import Departments from './components/Departments.vue'
+import Tabs from './components/Tabs.vue'
 
 export default {
   name: 'App',
   components: {
-    //HelloWorld,
-    //TailwindCSSDemo,
-    //PlanetChart,
-    USAChartGDP,
-    USAPredictedGDP
-    
+    //USAChartGDP,
+    //USAPredictedGDP,
+    Tabs
   }
 }
 </script>

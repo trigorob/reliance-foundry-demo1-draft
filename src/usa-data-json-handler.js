@@ -10,9 +10,6 @@ const SampleData = [92.2, 77.4, 59.5, 57.2, 66.8, 74.3, 84.9, 93, 87.4, 93.5, 10
 const USAGDPYears = data.map(({ date }) => date)
 const USAGDPLevel = data.map(({ level_current }) => level_current)
 
-// MANUAL STUB: 2016-2030
-//const USAGDPPredictedYears = [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030]
-
 // LIST COMPREHENSION CONVERSION: 40 Years after 2015
 const USAGDPPredictedYears = Array.from(Array(40).keys()).map((i) => (i+1) + 2015);
 
@@ -20,7 +17,8 @@ const USAGDPPredictedYears = Array.from(Array(40).keys()).map((i) => (i+1) + 201
 
 const fitSlope = lrm.getM(USAGDPYears, USAGDPLevel);
 const fitBase = lrm.getB(USAGDPYears, USAGDPLevel, fitSlope);
-const USAGDPPredictedLevel = lrm.fit(USAGDPPredictedYears, fitSlope, fitBase).map((x) => x / 1000).map((x) => x.toFixed(2));
+const lineErrorBuffer = -5000; //TODO: improved machine learning to measure this better
+const USAGDPPredictedLevel = lrm.fit(USAGDPPredictedYears, fitSlope, fitBase).map((x) => (x / 1000)+lineErrorBuffer).map((x) => x.toFixed(2));
 
 
 export {

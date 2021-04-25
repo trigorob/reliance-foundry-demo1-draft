@@ -31,6 +31,7 @@ function getM(xArray, yArray) {
 //	and SLOPE from getM()
 // Best used for arg m from fit()
 // fit() is based on a Linear Regression Line of Best Fit
+// MATH NOTE: YEAR (X) NEVER REACHES ZERO!
 function getB(xArray, yArray, m) {
 	const xSum = xArray.reduce((a, b) => a + b);
 	const xAvg = xSum / xArray.length;
@@ -39,6 +40,7 @@ function getB(xArray, yArray, m) {
 	const yAvg = ySum / yArray.length;	
 
 	return yAvg - (m * xAvg);
+	//return (m * xAvg) + (yAvg - yAvg);
 }
 
 
